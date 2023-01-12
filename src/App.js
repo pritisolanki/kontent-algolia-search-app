@@ -1,6 +1,6 @@
 import './App.css';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web';
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-hooks-web';
 
 
 const searchClient = algoliasearch(

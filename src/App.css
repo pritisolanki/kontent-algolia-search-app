@@ -1,7 +1,23 @@
 .App {
   text-align: center;
+  margin:30px;
 }
-
+#main-container{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ais-SearchBox{
+  margin: 3px;
+}
+.ais-SearchBox-input{
+  padding: 10px;
+  width: 300px;
+}
+.ais-SearchBox-submit{
+  padding: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +30,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: aliceblue;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

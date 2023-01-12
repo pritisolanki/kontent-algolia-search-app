@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import algoliasearch from 'algoliasearch/lite';
+import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web';
+
+
+const searchClient = algoliasearch(
+  'Q7IPUBMUDW',
+  '1863d1c31343c2cbd1f35405d7f6eee2'
+);
+
+function Hit({ hit }) {
+  return (
+    <article>
+      <h2>{hit.name}</h2>
+      <p>{hit.content[0].contents}</p>
+    </article>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main-container">
+      <h1 id="tagline">Algolia Search Box With Kontent.ai</h1>
+      <InstantSearch searchClient={searchClient} indexName="news">
+        <SearchBox />
+        <Hits hitComponent={Hit} />
+      </InstantSearch>
     </div>
   );
 }

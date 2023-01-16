@@ -16,5 +16,5 @@ Sample app is based on create-a-new-react-app
 ```
 
 ## Reference
-[Kontent Algolia Integration](https://kontent.ai/integrations/algolia/)
-[Kontent.ai Github](https://github.com/kontent-ai/integration-example-algolia)
+- [Kontent Algolia Integration](https://kontent.ai/integrations/algolia/)
+- [Kontent.ai Github](https://github.com/kontent-ai/integration-example-algolia)

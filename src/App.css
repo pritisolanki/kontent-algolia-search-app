@@ -29,6 +29,7 @@ body{
   margin: 0px 0px 0px 10px;
   height: 50px;
 }
+
 .ais-SearchBox-reset{
   background-color: lightskyblue;
   border: 1px solid grey;
@@ -37,6 +38,7 @@ body{
   margin: 0px 0px 0px 10px;
   height: 50px;
 }
+
 .ais-SearchBox-submit{
   padding: 10px;
 }

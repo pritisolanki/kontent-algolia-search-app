@@ -16,25 +16,25 @@ body{
 }
 .ais-SearchBox-input{
   padding: 10px;
-  width: 300px;
-  border: 2px solid gray;
-  border-radius: 10px;
+  width: 430px;
+  border: 1px solid #0077b6;
+  border-radius: 20px;
   height: 50px;
 }
 .ais-SearchBox-submit{
-  background-color: lightskyblue;
-  border: 1px solid grey;
+  background-color: #ade8f4;
+  border: 1px solid #0077b6;
   width: 50px;
-  border-radius: 9px;
+  border-radius: 30px;
   margin: 0px 0px 0px 10px;
   height: 50px;
 }
 
 .ais-SearchBox-reset{
-  background-color: lightskyblue;
-  border: 1px solid grey;
+  background-color: #ade8f4;
+  border: 1px solid #0077b6;
   width: 50px;
-  border-radius: 9px;
+  border-radius: 30px;
   margin: 0px 0px 0px 10px;
   height: 50px;
 }

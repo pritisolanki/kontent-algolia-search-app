@@ -13,10 +13,12 @@ function Hit({ hit }) {
     <article>
       <h2>{hit.name}</h2>
       <p>{hit.content[0].contents}</p>
+      <p><b>Written By: </b>{hit.content[1].name}</p>
+      <p>
+  </p>
     </article>
   );
 }
-
 function App() {
   return (
     <div id="main-container">

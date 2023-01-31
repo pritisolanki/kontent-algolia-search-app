@@ -1,6 +1,6 @@
 import './App.css';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web';
+import { InstantSearch, SearchBox, Hits ,  Pagination, Configure, Highlight} from 'react-instantsearch-hooks-web';
 
 
 const searchClient = algoliasearch(
@@ -16,7 +16,7 @@ function Hit({ hit }) {
       <p>{hit.content[0].contents}</p>
       <p>
         <Highlight attribute="name" hit={hit} tagname="mark" />
-        </p>
+      </p>
     </article>
   );
 }
@@ -25,8 +25,10 @@ function App() {
     <div id="main-container">
       <h1 id="tagline">Algolia Search Box With Kontent.ai</h1>
       <InstantSearch searchClient={searchClient} indexName="news">
+      <Configure hitsPerPage={3} />
         <SearchBox />
         <Hits hitComponent={Hit} />
+        <Pagination />
       </InstantSearch>
     </div>
   );

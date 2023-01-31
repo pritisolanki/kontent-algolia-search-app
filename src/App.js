@@ -1,6 +1,6 @@
 import './App.css';
 import algoliasearch from 'algoliasearch/lite';
-import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-hooks-web';
+import { InstantSearch, SearchBox, Hits, Highlight } from 'react-instantsearch-hooks-web';
 
 
 const searchClient = algoliasearch(
@@ -12,10 +12,11 @@ function Hit({ hit }) {
   return (
     <article>
       <h2>{hit.name}</h2>
+      <p>{ (hit.type !== 'dummy') ? 'Written By:'+hit.content[1].name : ''}</p>
       <p>{hit.content[0].contents}</p>
-      <p><b>Written By: </b>{hit.content[1].name}</p>
       <p>
-  </p>
+        <Highlight attribute="name" hit={hit} tagname="mark" />
+        </p>
     </article>
   );
 }

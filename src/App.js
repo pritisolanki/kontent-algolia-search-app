@@ -9,10 +9,11 @@ const searchClient = algoliasearch(
 );
 
 function Hit({ hit }) {
+  console.log(hit)
   return (
     <article>
       <h2>{hit.name}</h2>
-      <p>{ (hit.type !== 'dummy') ? 'Written By:'+hit.content[1].name : ''}</p>
+      <p>{ (hit.type !== 'dummy') ? hit.content[1] === undefined ? '': 'Written By:'+hit.content[1].name : ''}</p>
       <p>{hit.content[0].contents}</p>
       <p>
         <Highlight attribute="name" hit={hit} tagname="mark" />

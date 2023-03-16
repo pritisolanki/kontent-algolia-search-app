@@ -9,7 +9,6 @@ const searchClient = algoliasearch(
 );
 
 function Hit({ hit }) {
-  console.log(hit)
   return (
     <article>
       <h2>{hit.name}</h2>

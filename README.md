@@ -15,6 +15,9 @@ Sample app is based on create-a-new-react-app
 > npm start
 ```
 
+## Contribute
+[ ] Add highlight in description
+
 ## Reference
 - [Kontent Algolia Integration](https://kontent.ai/integrations/algolia/)
 - [Kontent.ai Github](https://github.com/kontent-ai/integration-example-algolia)
